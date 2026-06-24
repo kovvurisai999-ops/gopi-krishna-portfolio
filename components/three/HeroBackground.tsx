@@ -55,11 +55,9 @@ function FloatingLines() {
         const z = Math.sin(angle) * radius
         const points = [new THREE.Vector3(x, -3, z), new THREE.Vector3(x * 0.5, 3, z * 0.5)]
         const geometry = new THREE.BufferGeometry().setFromPoints(points)
-        lines.push(
-            <line key={i} geometry={geometry}>
-                <lineBasicMaterial color="#00d4ff" transparent opacity={0.15} />
-            </line>
-        )
+        const material = new THREE.LineBasicMaterial({ color: '#00d4ff', transparent: true, opacity: 0.15 })
+        const line = new THREE.Line(geometry, material)
+        lines.push(<primitive key={i} object={line} />)
     }
 
     return <group ref={group}>{lines}</group>
