@@ -157,8 +157,8 @@ export default function Hero() {
                         View Portfolio ↓
                     </button>
                     <a
-                        href="/resume.pdf"
-                        download
+                        href="/resume/Gopi_Krishna_Resume.pdf"
+                        download="Gopi_Krishna_Resume.pdf"
                         className="btn-secondary"
                         id="hero-download-resume-btn"
                     >

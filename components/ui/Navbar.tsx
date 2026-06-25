@@ -99,8 +99,8 @@ export default function Navbar() {
                     ))}
                     <li>
                         <a
-                            href="/resume.pdf"
-                            download
+                            href="/resume/Gopi_Krishna_Resume.pdf"
+                            download="Gopi_Krishna_Resume.pdf"
                             className="btn-primary"
                             style={{ padding: '0.5rem 1.25rem', fontSize: '0.85rem' }}
                         >

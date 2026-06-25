@@ -50,37 +50,39 @@ export default function About() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 boxShadow: '0 0 60px rgba(201,162,39,0.2)',
+                                overflow: 'hidden',
                             }}>
-                                <span style={{
-                                    fontFamily: 'Outfit, sans-serif',
-                                    fontWeight: 900,
-                                    fontSize: '5rem',
-                                    background: 'linear-gradient(135deg, #c9a227, #e8c547)',
-                                    WebkitBackgroundClip: 'text',
-                                    WebkitTextFillColor: 'transparent',
-                                    backgroundClip: 'text',
-                                }}>GK</span>
+                                <img
+                                    src="/images/gopi_krishna.jpeg"
+                                    alt="Gopi Krishna"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover'
+                                    }}
+                                />
                             </div>
                             {/* Orbit badge */}
                             <motion.div
                                 animate={{ rotate: 360 }}
-                                transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
-                                style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, borderRadius: '50%' }}
+                                transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+                                style={{ position: 'absolute', top: -15, left: -15, right: -15, bottom: -15, borderRadius: '50%' }}
                             >
                                 <div style={{
                                     position: 'absolute',
-                                    top: -8,
+                                    top: 0,
                                     left: '50%',
                                     transform: 'translateX(-50%)',
                                     background: '#c9a227',
                                     color: '#0a0a0f',
-                                    fontSize: '0.7rem',
+                                    fontSize: '0.65rem',
                                     fontWeight: 800,
-                                    padding: '4px 10px',
-                                    borderRadius: '20px',
+                                    padding: '3px 8px',
+                                    borderRadius: '12px',
                                     fontFamily: 'Outfit, sans-serif',
                                     whiteSpace: 'nowrap',
-                                }}>CA FINALIST</div>
+                                    boxShadow: '0 0 15px rgba(201,162,39,0.4)',
+                                }}>GOPI KRISHNA</div>
                             </motion.div>
                         </div>
                     </motion.div>

@@ -24,9 +24,9 @@ const contactLinks = [
         icon: '📄',
         label: 'Resume',
         value: 'Download CV (PDF)',
-        href: '/resume.pdf',
+        href: '/resume/Gopi_Krishna_Resume.pdf',
         color: '#2ecc71',
-        download: true,
+        download: 'Gopi_Krishna_Resume.pdf',
         id: 'contact-resume',
     },
 ]
